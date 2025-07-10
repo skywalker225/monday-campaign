@@ -21,12 +21,13 @@
   <button id="createCaret">Create Cart</button>
 
 
+  <!-- Cart Create -->
   <script>
   document.getElementById('createCaret').addEventListener('click', function () {
     const payload = {
    "user": {
        "email": "monchaya+campaign@29next.com",
-       "first_name": "Man",
+       "first_name": "Mon",
        "last_name": "Campaigns",
        "phone_number": "+15732020210"
     //    ,"language": "1234"
@@ -37,7 +38,7 @@
             "quantity": 3
         }
     ],
-    // "vouchers": ["FREE_SHIPPING"],
+    "vouchers": ["FLUKE10"],
     "attribution": {
         "funnel": "M funnel",
         "utm_source": "PA utm_source",
@@ -85,6 +86,7 @@
   });
 </script>
 
+  <!-- Upsell  -->
   <script>
   document.getElementById('submitUpsellBtn').addEventListener('click', function () {
     const orderRefId = document.getElementById('orderRefId').value.trim();
@@ -125,6 +127,7 @@
   });
 </script>
 
+<!-- Order Create -->
 <script>
   document.getElementById('submitBtn').addEventListener('click', function () {
     const payload = {

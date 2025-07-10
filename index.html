@@ -135,14 +135,25 @@
 <script>
   document.getElementById('submitBtn').addEventListener('click', function () {
     const payload = {
-      lines: [{ package_id: 1, quantity: 3 }],
+      //lines: [{ package_id: 1, quantity: 3 }],
+      "lines": [
+          {
+              "package_id":2,
+              "quantity": 1
+          }
+          ,{
+              "package_id":3,
+              "quantity": 1
+          }
+      ],
       user: {
-        email: "anuwat217@29next.com",
-        first_name: "M001",
-        last_name: "Campaign#5",
-        phone_number: "+15732020217",
-        ip: "0.0.0.0"
+        email: "monchaya+campaign@29next.com",
+        first_name: "Mon",
+        last_name: "Campaigns",
+        phone_number: "+15732020210"
+        // ip: "0.0.0.0"
       },
+      "vouchers": ["FLUKE10"],
       attribution: {
         funnel: "M funnel",
         utm_source: "PA utm_source",
@@ -166,7 +177,7 @@
       },
       payment_detail: {
         payment_method: "card_token",
-        card_token: "4s6P5V0dzdZyWSxZQszUxYAPRhB"
+        card_token: "01JZSWTJWPRR9C5B8E3MYESS9Y"
       },
       shipping_address: {
         first_name: "test",

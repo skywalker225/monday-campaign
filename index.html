@@ -138,7 +138,7 @@
       //lines: [{ package_id: 1, quantity: 3 }],
       "lines": [
           {
-              "package_id": 15,
+              "package_id": 22,
               "quantity": 1
           }
           // ,{
@@ -147,6 +147,7 @@
           //     "is_upsell": true
           // }
       ],
+      "currency": "USD",
       user: {
         email: "monchaya+campaign@29next.com",
         first_name: "Mon",
@@ -154,28 +155,28 @@
         phone_number: "+15732020210"
         // ip: "0.0.0.0"
       },
-      // "vouchers": ["SUMMER"],
-      attribution: {
-        funnel: "M funnel",
-        utm_source: "PA utm_source",
-        utm_medium: "PA utm_medium",
-        utm_campaign: "PA utm_campaign",
-        utm_term: "PA utm_term",
-        utm_content: "PA utm_content",
-        gclid: "PA gclid",
-        metadata: {
-          attribution_meta_decimal: "0.01",
-          attribution_meta_integer: "1000",
-          attribution_meta_text: "Han"
-        },
-        affiliate: "PA affiliate",
-        subaffiliate1: "PA subaffiliate1",
-        subaffiliate2: "PA subaffiliate2",
-        subaffiliate3: "PA subaffiliate3",
-        subaffiliate4: "PA subaffiliate4",
-        subaffiliate5: "PA subaffiliate5",
-        agent: 1
-      },
+      "vouchers": ["SUMMER"],
+      // attribution: {
+      //   funnel: "M funnel",
+      //   utm_source: "PA utm_source",
+      //   utm_medium: "PA utm_medium",
+      //   utm_campaign: "PA utm_campaign",
+      //   utm_term: "PA utm_term",
+      //   utm_content: "PA utm_content",
+      //   gclid: "PA gclid",
+      //   metadata: {
+      //     attribution_meta_decimal: "0.01",
+      //     attribution_meta_integer: "1000",
+      //     attribution_meta_text: "Han"
+      //   },
+      //   affiliate: "PA affiliate",
+      //   subaffiliate1: "PA subaffiliate1",
+      //   subaffiliate2: "PA subaffiliate2",
+      //   subaffiliate3: "PA subaffiliate3",
+      //   subaffiliate4: "PA subaffiliate4",
+      //   subaffiliate5: "PA subaffiliate5",
+      //   agent: 1
+      // },
       payment_detail: {
         // payment_method: "paypal"
         payment_method: "card_token",
@@ -202,7 +203,7 @@
         line4: "Coral Gables",
         phone_number: "+12025550112"
       },
-      success_url: "http://sandbox.localhost:3333/"
+      success_url: "https://webhook.site/10d5e8cb-1940-4c34-8100-f2fb33b0a671"
     };
 
     fetch('https://campaigns.apps-staging.29next.com/api/v1/orders/', {

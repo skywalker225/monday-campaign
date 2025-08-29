@@ -30,7 +30,6 @@
        "first_name": "Mon",
        "last_name": "Campaigns",
        "phone_number": "+15732020210"
-    //    ,"language": "1234"
     },
     "lines": [
         {
@@ -42,7 +41,7 @@
             "quantity": 1
         }
     ],
-    "vouchers": ["SUMMER"],
+    // "vouchers": ["SUMMER"],
     "attribution": {
         "funnel": "M funnel",
         "utm_source": "PA utm_source",
@@ -65,7 +64,7 @@
         "agent": 1
     }
 };
-    fetch('https://campaigns.apps-staging.29next.comapi/v1/carts/', {
+    fetch('https://campaigns.apps-staging.29next.com/api/v1/carts/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

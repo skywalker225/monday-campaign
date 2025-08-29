@@ -34,11 +34,11 @@
     },
     "lines": [
         {
-            "package_id":2,
+            "package_id": 22,
             "quantity": 1
         }
         ,{
-            "package_id":3,
+            "package_id": 3,
             "quantity": 1
         }
     ],
@@ -103,7 +103,7 @@
     const url = `https://campaigns.apps-staging.29next.com/api/v1/orders/${encodeURIComponent(orderRefId)}/upsells/`;
 
     const payload = {
-      lines: [{ package_id: 3 }]
+      lines: [{ package_id: 1 }]
     };
 
     fetch(url, {

@@ -1,17 +1,17 @@
 <html>
   
-  <script async src="https://campaigns.anuwatwork.com/js/v1/campaign/"></script>
+  <script async src="https://campaigns.apps-staging.29next.com/js/v1/campaign/"></script>
   <script>
-      window.addEventListener('load', function () {
-          nextCampaign.config({
-              apiKey: "g8ep0a5wYUIqOkaYDJcHOWyqk1et813Pj5OxV48X",
-          })
-          nextCampaign.event('page_view', {
-              title: document.title,
-              url: window.location.href
-          });
-      });
-  </script>
+    window.addEventListener('load', function () {
+        nextCampaign.config({
+            apiKey: "Ag0NqLHqBgppblJXQoBKt2P6i2NPpSth1erbndJ4",
+        })
+        nextCampaign.event('page_view', {
+            title: document.title,
+            url: window.location.href
+        });
+    });
+</script>
   <button id="submitBtn">Submit Order</button>
 
   <label for="orderRefId">Order Ref ID:</label>
@@ -42,7 +42,7 @@
             "quantity": 1
         }
     ],
-    "vouchers": ["FLUKE10"],
+    "vouchers": ["SUMMER"],
     "attribution": {
         "funnel": "M funnel",
         "utm_source": "PA utm_source",
@@ -65,11 +65,11 @@
         "agent": 1
     }
 };
-    fetch('https://campaigns.anuwatwork.com/api/v1/carts/', {
+    fetch('https://campaigns.apps-staging.29next.comapi/v1/carts/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'g8ep0a5wYUIqOkaYDJcHOWyqk1et813Pj5OxV48X' // Replace with your actual token
+        'Authorization': 'Ag0NqLHqBgppblJXQoBKt2P6i2NPpSth1erbndJ4' // Replace with your actual token
       },
       body: JSON.stringify(payload)
     })
@@ -100,7 +100,7 @@
       return;
     }
 
-    const url = `https://campaigns.anuwatwork.com/api/v1/orders/${encodeURIComponent(orderRefId)}/upsells/`;
+    const url = `https://campaigns.apps-staging.29next.com/api/v1/orders/${encodeURIComponent(orderRefId)}/upsells/`;
 
     const payload = {
       lines: [{ package_id: 3 }]
@@ -110,7 +110,7 @@
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'g8ep0a5wYUIqOkaYDJcHOWyqk1et813Pj5OxV48X' // Replace with your real token
+        'Authorization': 'Ag0NqLHqBgppblJXQoBKt2P6i2NPpSth1erbndJ4' // Replace with your real token
       },
       body: JSON.stringify(payload)
     })
@@ -138,14 +138,14 @@
       //lines: [{ package_id: 1, quantity: 3 }],
       "lines": [
           {
-              "package_id":2,
+              "package_id": 15,
               "quantity": 1
           }
-          ,{
-              "package_id":3,
-              "quantity": 1
-              ,"is_upsell": true
-          }
+          // ,{
+          //     "package_id": 3,
+          //     "quantity": 1,
+          //     "is_upsell": true
+          // }
       ],
       user: {
         email: "monchaya+campaign@29next.com",
@@ -154,7 +154,7 @@
         phone_number: "+15732020210"
         // ip: "0.0.0.0"
       },
-      "vouchers": ["FLUKE10"],
+      "vouchers": ["SUMMER"],
       attribution: {
         funnel: "M funnel",
         utm_source: "PA utm_source",
@@ -177,9 +177,9 @@
         agent: 1
       },
       payment_detail: {
-        payment_method: "paypal"
-        // payment_method: "card_token",
-        // card_token: "01JZSWTJWPRR9C5B8E3MYESS9Y"
+        // payment_method: "paypal"
+        payment_method: "card_token",
+        card_token: "01JYQW3BFBDJRXZXA5KTGYPHW7"
       },
       shipping_address: {
         first_name: "test",
@@ -205,11 +205,11 @@
       success_url: "http://sandbox.localhost:3333/"
     };
 
-    fetch('https://campaigns.anuwatwork.com/api/v1/orders/', {
+    fetch('https://campaigns.apps-staging.29next.com/api/v1/orders/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'g8ep0a5wYUIqOkaYDJcHOWyqk1et813Pj5OxV48X' // Replace with your actual token
+        'Authorization': 'Ag0NqLHqBgppblJXQoBKt2P6i2NPpSth1erbndJ4' // Replace with your actual token
       },
       body: JSON.stringify(payload)
     })
